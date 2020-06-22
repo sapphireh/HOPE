@@ -62,6 +62,11 @@ The user must also specify a --model, the variants of which are described in det
 * gcn -- GraphSage with GCN-based aggregator
 * n2v -- an implementation of [DeepWalk](https://arxiv.org/abs/1403.6652) (called n2v for short in the code.)
 
+#### Core parameters
+* hierarchy -- the number of multi-tasks for hierarchical learning and you may set 1 or 2 or 3
+* ko_threshold -- the threshold of traning the majoritity class and the threshold means the lower limt of sample in majoruty class
+* ko_threshold2 -- the threshold of traning the minority class and the threshold means the upper limt of sample in minority class
+
 #### Logging directory
 Finally, a --base_log_dir should be specified (it defaults to the current directory).
 The output of the model and log files will be stored in a subdirectory of the base_log_dir.
